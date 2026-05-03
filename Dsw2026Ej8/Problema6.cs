@@ -4,11 +4,11 @@ using System.Text;
 
 namespace Dsw2026Ej8
 {
-    public class Problema5
+    public class Problema6
     {
-        public decimal ObtenerImporteFinal(Sale Sale)
+        public string NormalizarCodigoProducto(string code)
         {
-            return Sale.CalculateTotal();
+            return code.ToProductCode();
         }
     }
 }

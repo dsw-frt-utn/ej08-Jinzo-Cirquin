@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Dsw2026Ej8
 {
-    internal class Product
+    public class Product
     {
         private int _code;
         private string _description;

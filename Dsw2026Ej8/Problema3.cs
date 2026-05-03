@@ -6,12 +6,15 @@ namespace Dsw2026Ej8
 {
     public class Problema3
     {
-        public string ComprarCopias(int originalValue, ProductHelper product)
+        public string ComprarCopias(int originalValue, Product product)
         {
            int _copyValue = originalValue;
-           originalValue++;
-           ProductHelper actualProduct = product;
+           _copyValue++;
+           Product copyProduct = product; 
+           copyProduct.Update("Descripcion modificada");
            
+           return $"{originalValue} - {_copyValue} - {copyProduct.GetDescription()}";
+
         }
     }
 }
